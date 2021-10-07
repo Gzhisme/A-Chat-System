@@ -11,7 +11,7 @@ import java.util.HashMap;
 public class ManageClientConnectServerThread {
     private static HashMap<String, ClientConnectServerThread> hashMap = new HashMap<>();
 
-    //insert a thread
+    //添加
     public static void addClientThread(String userID, ClientConnectServerThread thread) {
 
         hashMap.put(userID, thread);
@@ -21,5 +21,11 @@ public class ManageClientConnectServerThread {
     public static ClientConnectServerThread getClientThread(String userID) {
 
         return hashMap.get(userID);
+    }
+    
+    //移除
+    public static void removeClientThread(String userID){
+
+        hashMap.remove(userID);
     }
 }
