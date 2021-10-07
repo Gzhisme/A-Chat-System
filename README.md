@@ -6,4 +6,4 @@
 
 当前项目可以支持的能力包括：多个用户登录、防止重复登录、获取在线用户列表、私聊、群发、收发文件、离线收发消息/文件、客户端无异常退出。
 
-欢迎通过我的CSDN博客:https://blog.csdn.net/Gaozihang777交流~
+欢迎通过我的CSDN博客交流~:https://blog.csdn.net/Gaozihang777
