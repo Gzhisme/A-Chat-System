@@ -82,6 +82,7 @@ public class UserClientService {
             ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
             oos.writeObject(message);
             System.out.println(user.getUserID() + "已退出系统");
+            ManageClientConnectServerThread.removeClientThread(user.getUserID());//移除通信线程
             System.exit(0);//关闭进程
         } catch (IOException e) {
             e.printStackTrace();
